@@ -6,5 +6,6 @@ A single cylindrical scintillator, together with a PMT were used to detect decay
 ## Introduction
 
 A muon is one of the elementary particles, it often can be treated as an unstable, much heavier electron. Muons have an electric charge of -1e and spin 1/2, their antiparticle - antimuons, have +1e electric charge. According to the sign of their charge, muons and antimuona are also referred to as negative and positive muons respectively, and are denoted as $` \mu^- `$ and $`\mu^+ `$. Muons are produced in Earth's atmosphere, as a result of cosmic radiation colliding with air molecules. Muons are unstable, they decay, and negative muons can also disappear through a process called muon capture. Muon decay and processes are: 
-$$ 2 + x^{2} $$
-
+```math
+\mu^_ \rightarrow e^_ + \bar{v_e} + v_{\mu}
+```
