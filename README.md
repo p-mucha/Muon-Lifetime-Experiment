@@ -20,5 +20,5 @@ A muon is one of the elementary particles, it often can be treated as an unstabl
 The decay rate of muons is characterised with a constant called the muon lifetime. If at moment t, there are 
 
 ## References
-[1]	J.M. Cassels, ‘Pion and Muon Decay [and Discussion]’, the Royal Society publishing, Series A, Mathematical and Physical Sciences, p.463, (Aug 1958)
+[1]	J.M. Cassels, ‘Pion and Muon Decay [and Discussion]’, the Royal Society publishing, Series A, Mathematical and Physical Sciences, p.463, (Aug 1958) \
 [2]	T. P. Gorringe, D. W. Hertzog, ‘Precision Muon Physics’, Progress in Particle and Nuclear Physics, p.4, 2015 
