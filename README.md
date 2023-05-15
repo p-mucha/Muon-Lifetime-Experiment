@@ -5,8 +5,20 @@ A single cylindrical scintillator, together with a PMT were used to detect decay
 
 ## Introduction
 
-A muon is one of the elementary particles, it often can be treated as an unstable, much heavier electron. Muons have an electric charge of -1e and spin 1/2, their antiparticle - antimuons, have +1e electric charge. According to the sign of their charge, muons and antimuona are also referred to as negative and positive muons respectively, and are denoted as $` \mu^- `$ and $`\mu^+ `$. Muons are produced in Earth's atmosphere, as a result of cosmic radiation colliding with air molecules. Muons are unstable, they decay, and negative muons can also disappear through a process called muon capture. Muon decay and processes are: 
+A muon is one of the elementary particles, it often can be treated as an unstable, much heavier electron. Muons have an electric charge of -1e and spin 1/2, their antiparticle - antimuons, have +1e electric charge. According to the sign of their charge, muons and antimuona are also referred to as negative and positive muons respectively, and are denoted as $` \mu^- `$ and $`\mu^+ `$. Muons are produced in Earth's atmosphere, as a result of cosmic radiation colliding with air molecules. Muons are unstable, they decay, and negative muons can also disappear through a process called muon capture. Muon decay and processes are [1], [2]: 
 ```math 
 \mu^- \rightarrow e^- + \bar{v_e} + v_{\mu}
 ```
 
+```math 
+\mu^+ \rightarrow e^+ + v_{e} + \bar{v_{\mu}}
+```
+
+```math 
+\mu^- + p \rightarrow n + v_{\mu}
+```
+The decay rate of muons is characterised with a constant called the muon lifetime. If at moment t, there are 
+
+## References
+[1]	J.M. Cassels, ‘Pion and Muon Decay [and Discussion]’, the Royal Society publishing, Series A, Mathematical and Physical Sciences, p.463, (Aug 1958)
+[2]	T. P. Gorringe, D. W. Hertzog, ‘Precision Muon Physics’, Progress in Particle and Nuclear Physics, p.4, 2015 
