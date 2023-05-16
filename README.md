@@ -70,7 +70,7 @@ Using ratio of positive to negative muon fluxes $` R(\frac{\mu^+}{\mu^-}) = \fra
 \tau^+ = \frac{R \tau_{obs} \tau^-}{\tau^- + R \tau^- - \tau_{obs}}
 ```
 Negative muon lifetime $` \tau^- `$ is taken as negative muon lifetime on carbon, since scintillator used in this experiment is carbon based. 
-It is: $` \tau^- = (2.043 \pm 0.003) \mu s $` [5]
+It is: $` \tau^- = (2.043 \pm 0.003) \mu s `$ [5]
 The ratio of fluxes R, needs to be taken for a given muon momentum. The relativistic energy - momentum relation is:
 ```math
 E^2 = p^2 c^2 + m_0^2 c^4
@@ -80,7 +80,7 @@ Where: E is the energy of a particle, p is its momentum and m_0 - its mass, c is
 p = \sqrt{E^2 - m_0^2}
 ```
 Where for muons: $`m_0 = (105.6583715 \pm 0.0000035) MeV `$ [6].
-Muons which decay in scintillator used in this experiment, have an estimated energy of about 160 MeV. Therefore, their momentum is estimated as $` p \approx 120 MeV. 
+Muons which decay in scintillator used in this experiment, have an estimated energy of about 160 MeV. Therefore, their momentum is estimated as $` p \approx 120 MeV `$. 
 For this momentum, the ratio is taken as: $` R = 1.21 \pm 0.01 `$ [7].
 
 ## Results and Analysis
