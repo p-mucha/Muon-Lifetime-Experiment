@@ -17,7 +17,29 @@ A muon is one of the elementary particles, it often can be treated as an unstabl
 ```math 
 \mu^- + p \rightarrow n + v_{\mu}
 ```
-The decay rate of muons is characterised with a constant called the muon lifetime. If at moment t, there are 
+The decay rate of muons is characterised with a constant called the muon lifetime. If at moment t, there are given N(t) muons and the decay rate is $` \lambda `$, then change in muon population in short time interval dt can be written as:
+```math 
+\frac{dN}{N(t)} = - \lambda dt
+```
+
+Parameter $` \lambda `$ is inverse of the muon lifetime:
+
+```math
+\tau_{\mu} = \frac{1}{\lambda}
+```
+This leads to probability density of decay at time t for a single muon:
+
+```math
+D(t) = \frac{1}{\tau_{\mu}} e^{- \frac{1}{\tau_{\mu}} t}
+```
+Since negative muon has one more way of disappearing than positive muon, its effective lifetime is slightly shorter.
+Knowing the positive muon lifetime constant $` \tau_{\mu} `$, the Fermi coupling constant $`G_F `$ can be calculated as:
+
+```math
+G_F = \sqrt{\frac{192 \pi^3 \hbar^7}{\tau_{\mu} m_{\mu}^5 c^4}}
+```
+
+
 
 ## References
 [1]	J.M. Cassels, ‘Pion and Muon Decay [and Discussion]’, the Royal Society publishing, Series A, Mathematical and Physical Sciences, p.463, (Aug 1958) \
