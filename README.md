@@ -32,6 +32,10 @@ This leads to probability density of decay at time t for a single muon:
 ```math
 D(t) = \frac{1}{\tau_{\mu}} e^{- \frac{1}{\tau_{\mu}} t}
 ```
+
+```math
+D(t) = \frac{1}{\tau_{\mu}} e^{- t/ \tau_{\mu}}
+```
 Since negative muon has one more way of disappearing than positive muon, its effective lifetime is slightly shorter.
 Knowing the positive muon lifetime constant $` \tau_{\mu} `$, the Fermi coupling constant $`G_F `$ can be calculated as:
 
