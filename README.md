@@ -44,13 +44,11 @@ G_F = \sqrt{\frac{192 \pi^3 \hbar^7}{\tau_{\mu} m_{\mu}^5 c^4}}
 
 For the detection of muons, the 'Muon Physics' apparatus by TeachSpin is used. It consists of the detector module and electronics module. Active part of the detector module is single right circulat cylinder, polyvinyl toluene (PVT) - based scintillator with 15 cm diameter and 12.5 cm height. It is optically coupled to a photomultiplier tube (PMT). The entire hardware setup is shown on Figure 1.
 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/eaed9178-6f1f-42b0-9bc2-255565825958)
-
-**Figure 1. Hardware diagram of TeachSpin 'Muon Physics' equipment (taken from [4]).**
-
 <div align="center">
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/eaed9178-6f1f-42b0-9bc2-255565825958" alt="image">
 </div>
+**Figure 1. Hardware diagram of TeachSpin 'Muon Physics' equipment (taken from [4]).**
+
 When muon enters scintillator, it causes excitation of scintillator’s molecules, this leads to light emission, which is then converted to an electric signal by the PMT. If muon stops inside the scintillator, it eventually decays and produces a second light signal, which is also converted to an electric signal by the PMT. Signals from the PMT are then amplified by a two-stage amplifier. The output is fed to the discriminator, and after that to the FPGA timer. Discriminator works as an adjustable voltage threshold, signals below this threshold are cut and not measured. This is done to limit the amount of noise, as muons are not the only particles that could produce light signal in scintillator. Since expected flux of muons entering the detector can be estimated, discriminator threshold can be adequately adjusted, until such muon rate is achieved, which allows to limit the noise. FPGA timer is responsible for distinguishing pairs of signals which occur close in time,  from all the other signals. A signal above the discriminator threshold starts the 50 MHz FPGA timer, if second signal appears within 20 $`\mu s `$, the time between them is recorded. This corresponds to muon entering scintillator, producing first signal, stopping and decaying inside scintillator, thus producing second signal. If second signal does not occur within this timing window, timer clock resets. This scenario corresponds to muon passing through scintillator, without decaying. All the data, is then processed to a Laptop via USB port, decay times are plotted as histogram using ‘Muon Physics’ program. 
 
 In the first part of calibration of the experimental setup, gain of the two stage amplifier located inside the electronics box was measured for a range of signal frequencies using sine wave signal from function generator. Gain is defined as ratio between voltage output and voltage input. In this experiment, TG315 function generator was used. GDS-1102A oscilloscope 
@@ -94,6 +92,10 @@ For this momentum, the ratio is taken as: $` R = 1.21 \pm 0.01 `$ [7].
 ## Results and Analysis
 Gain of the two-stage amplifier is plotted against the signal frequency. Gain is defined as ratio between output and input voltages, to obtain the real gain of the amplifier, this value is additionally multiplied by 21, due to the attenuation resistors inside the electronics box.
 ![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/ca0f23e8-66ce-43cb-a08d-cae6f42eb2ef)
+
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/ca0f23e8-66ce-43cb-a08d-cae6f42eb2ef" alt="image">
+</div>
 **Figure 2. Gain of the two-stage amplifier used in TeachSpin apparatus vs frequency of the sine wave voltage input from the function generator.**
 
 On Figure 2, it can be seen that gain depends significantly on the frequency, however there is a region in which gain appears to be stable. Based on those measurements, the stable gain frequency range was estimated to be from $` (20.92 \pm 0.01)kHz to (396.3 \pm 0.1)kHz `$. Limits of the range of decay times with stable range are taken as the inverses of the frequency limits. This gives a range of decay times that can be measured reliebly as: $` (2.52 \pm 0.01) \mu s - (47.80 \pm 0.02) \mu s `$. The upper limit is however larger than the maximum decay time allowed by the FPGA, therefore the final range in which we can measure decay times reliably is taken as: 
