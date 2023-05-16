@@ -50,7 +50,7 @@ For the detection of muons, the 'Muon Physics' apparatus by TeachSpin is used. I
 
 <p align="center">
   
-**Figure 1. Hardware diagram of TeachSpin 'Muon Physics' equipment (taken from [4]).**
+  **Figure 1. Hardware diagram of TeachSpin 'Muon Physics' equipment (taken from [4]).**
   
 </p>
 
