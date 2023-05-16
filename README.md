@@ -48,10 +48,9 @@ For the detection of muons, the 'Muon Physics' apparatus by TeachSpin is used. I
 
 **Figure 1. Hardware diagram of TeachSpin 'Muon Physics' equipment (taken from [4]).**
 
-<p align="center">
-  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/eaed9178-6f1f-42b0-9bc2-255565825958" alt="Sublime's custom image"/>
-</p>
-
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/eaed9178-6f1f-42b0-9bc2-255565825958" alt="image">
+</div>
 When muon enters scintillator, it causes excitation of scintillator’s molecules, this leads to light emission, which is then converted to an electric signal by the PMT. If muon stops inside the scintillator, it eventually decays and produces a second light signal, which is also converted to an electric signal by the PMT. Signals from the PMT are then amplified by a two-stage amplifier. The output is fed to the discriminator, and after that to the FPGA timer. Discriminator works as an adjustable voltage threshold, signals below this threshold are cut and not measured. This is done to limit the amount of noise, as muons are not the only particles that could produce light signal in scintillator. Since expected flux of muons entering the detector can be estimated, discriminator threshold can be adequately adjusted, until such muon rate is achieved, which allows to limit the noise. FPGA timer is responsible for distinguishing pairs of signals which occur close in time,  from all the other signals. A signal above the discriminator threshold starts the 50 MHz FPGA timer, if second signal appears within 20 $`\mu s `$, the time between them is recorded. This corresponds to muon entering scintillator, producing first signal, stopping and decaying inside scintillator, thus producing second signal. If second signal does not occur within this timing window, timer clock resets. This scenario corresponds to muon passing through scintillator, without decaying. All the data, is then processed to a Laptop via USB port, decay times are plotted as histogram using ‘Muon Physics’ program. 
 
 In the first part of calibration of the experimental setup, gain of the two stage amplifier located inside the electronics box was measured for a range of signal frequencies using sine wave signal from function generator. Gain is defined as ratio between voltage output and voltage input. In this experiment, TG315 function generator was used. GDS-1102A oscilloscope 
