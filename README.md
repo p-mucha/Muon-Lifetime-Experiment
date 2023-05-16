@@ -100,7 +100,9 @@ Gain of the two-stage amplifier is plotted against the signal frequency. Gain is
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/ca0f23e8-66ce-43cb-a08d-cae6f42eb2ef" alt="image">
 </div>
 
-**Figure 2. Gain of the two-stage amplifier used in TeachSpin apparatus vs frequency of the sine wave voltage input from the function generator.**
+<p align="center">
+  <b>Figure 2. Gain of the two-stage amplifier used in TeachSpin apparatus vs frequency of the sine wave voltage input from the function generator.</b>
+</p>
 
 On Figure 2, it can be seen that gain depends significantly on the frequency, however there is a region in which gain appears to be stable. Based on those measurements, the stable gain frequency range was estimated to be from $` (20.92 \pm 0.01)kHz `$ to $` (396.3 \pm 0.1)kHz `$. Limits of the range of decay times with stable range are taken as the inverses of the frequency limits. This gives a range of decay times that can be measured reliebly as: $` (2.52 \pm 0.01) \mu s - (47.80 \pm 0.02) \mu s `$. The upper limit is however larger than the maximum decay time allowed by the FPGA, therefore the final range in which we can measure decay times reliably is taken as: 
 ```math
@@ -110,7 +112,9 @@ On Figure 2, it can be seen that gain depends significantly on the frequency, ho
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/8966dabe-dc13-4a86-9c27-49362ae9fb59" alt="image">
 </div>
 
-**Figure 3. Gain vs frequency in the stable gain range of the amplifier, red line roughly indicates which data points are within each other's uncertainties.**
+<p align="center">
+  <b>Figure 3. Gain vs frequency in the stable gain range of the amplifier, red line roughly indicates which data points are within each other's uncertainties.</b>
+</p>
 
 In the next step, timing of FPGA timer was checked against the readings from an oscilloscope. 
 
@@ -118,7 +122,9 @@ In the next step, timing of FPGA timer was checked against the readings from an 
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/ec78b0be-9ad5-404a-a0f3-2ec04ae3d99b" alt="image">
 </div>
 
-**Figure 4. Time interval between pulser signals measured by FPGA, vs measured by the oscilloscope. Linear fit is performed using least squares rule.**
+<p align="center">
+  <b>Figure 4. Time interval between pulser signals measured by FPGA, vs measured by the oscilloscope. Linear fit is performed using least squares rule.</b>
+</p>
 
 Perfect agreement between the two methods of measurement would correspond to a line 1x+0 on the graph, the obtained fit parameters are within their uncertainty from it. This indicates that FPGA measures time between two signals reliably. It was also noticed, that as expected when time separation between two signals was larger than $` 20 \mu s `$, 'Muon Physics’ program was not showing the time between signals but instead, number of instances when the second flash did not occur within the FPGA timing window. 
 The vertical flux through scintillator is estimated as flux [8] times scintillator’s base area, to be $` \approx 3 s^-1 `$.
@@ -134,7 +140,10 @@ This description works however only for larger numbers of occurances, therefore 
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/0d361020-996a-412c-9a7d-d73dfbe25981" alt="image">
 </div>
 
-**Figure 5. Histogram of the muon decay data together with fitted function.**
+<p align="center">
+  <b>Figure 5. Histogram of the muon decay data together with fitted function.</b>
+</p>
+
 
 A muon lifetime is obtained as:
 ```math
@@ -161,14 +170,18 @@ Impact of the number of bins and how low decay times are disregarded (the cut th
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/8ad8262f-48a1-4e32-a524-38f63d4f3594" alt="image">
 </div>
 
-**Figure 6. Fitted lifetime value relation to how low decay times are disregarded (cut threshold).**
+<p align="center">
+  <b>Figure 6. Fitted lifetime value relation to how low decay times are disregarded (cut threshold).</b>
+</p>
 
 
 <div align="center">
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/11e1da44-a0dd-473f-8c45-db5a9eda2da7" alt="image">
 </div>
 
-**Figure 7. Fitted lifetime value relation to the chosen initial number of bins (before combining bins together for at least 5 counts in each).**
+<p align="center">
+  <b>Figure 7. Fitted lifetime value relation to the chosen initial number of bins (before combining bins together for at least 5 counts in each).</b>
+</p>
 
 Figure 7 reveals a negative correlation between fitted lifetime and how many bins are initially chosen. This lowers confidence in fit result, since the method of rounding up square root of number of data points for choosing number of bins is a rule of thumb. The reason for this correlation is the fact that for bigger numbers of bins, each bin contains less counts, because the constant total number of counts is being distributed into more bins. Since decay times are exponentially distributed, for large decay times there is generally less occurrences. However after combining the bins, each bin for larger decay times has at least 5 counts, therefore choosing bigger number of bins decreases counts in bins at lower decay times, but does not change them at larger decay times, due to the method of combining the bins together. This tends to make the distribution less ‘steep’ which corresponds to lower lifetime values. This can be observed, by comparing fitted functions and histograms for different numbers of bins. 
 
@@ -176,13 +189,17 @@ Figure 7 reveals a negative correlation between fitted lifetime and how many bin
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/80a4a5ae-1f3d-47ac-add6-866c39398155" alt="image">
 </div>
 
-**Figure 8. Numbers of occurrences in bins together with fitted function, for 25 bins (before combining them).**
+<p align="center">
+  <b>Figure 8. Numbers of occurrences in bins together with fitted function, for 25 bins (before combining them).</b>
+</p>
 
 <div align="center">
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/1a197122-f4bb-408b-aaa3-6351f1496bef" alt="image">
 </div>
 
-**Figure 9. Numbers of occurrences in bins together with fitted function, for 60 bins (before combining them).**
+<p align="center">
+  <b>Figure 9. Numbers of occurrences in bins together with fitted function, for 60 bins (before combining them).</b>
+</p>
 
 Graphs 8 and 9 show how numbers of occurrences decrease at small decay times when number of bins is chosen as bigger, but they stay almost unchanged for large decay times. This results in the trend of decreasing fitted lifetime for increasing number of bins. 
 
@@ -192,7 +209,9 @@ The same relations of fitted lifetime to number of bins and cut threshold are al
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/5831fa95-230e-43a4-bab8-113d903a5642" alt="image">
 </div>
 
-**Figure 10. Fitted lifetime value for unchanged bins relation to how low decay times are disregarded (cut threshold).**
+<p align="center">
+  <b>Figure 10. Fitted lifetime value for unchanged bins relation to how low decay times are disregarded (cut threshold).</b>
+</p>
 
 Figures 6 and 10 show similar trend between the fitted lifetime and cut threshold.
 
@@ -200,7 +219,9 @@ Figures 6 and 10 show similar trend between the fitted lifetime and cut threshol
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/cb2eafba-4a71-4a38-a9b7-57bdff736671" alt="image">
 </div>
 
-**Figure 11. Fitted lifetime value for unchanged bins relation to the chosen number of bins.**
+<p align="center">
+  <b>Figure 11. Fitted lifetime value for unchanged bins relation to the chosen number of bins.</b>
+</p>
 
 Figure 11 reveals, that the negative correlation between lifetime and number of bins disappears when the bins are not changed. 
 
@@ -210,7 +231,9 @@ The goodness of fit is additionally tested by investigating how the reduced $` \
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/568a7068-1d3a-4313-8e6b-b5d8e2d11c75" alt="image">
 </div>
 
-**Figure 12. Reduced $` \chi^2 `$ relation to the initial number of bins when combining the bins together such that each bin contains at least 5 occurrences.**
+<p align="center">
+  <b>Figure 12. Reduced $` \chi^2 `$ relation to the initial number of bins when combining the bins together such that each bin contains at least 5 occurrences.</b>
+</p>
 
 The general trend in the reduced $` \chi^2 `$ is that it is large for small numbers of bins, above 1, and it decreases with growing number of bins, until after about 40 bins, where it oscillates between about 0.4 and 0.95, without any clear positive or negative correlation. 
 For the histogram on Figure 5, the initial number of bins is 25, for which the reduced $` \chi^2 `$ is equal to 0.850, this indicates a good fit.  
