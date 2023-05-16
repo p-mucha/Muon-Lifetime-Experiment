@@ -103,11 +103,18 @@ On Figure 2, it can be seen that gain depends significantly on the frequency, ho
 ```math
 (2.52 \pm 0.01) \mu s - 20 \mu s
 ```
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/8966dabe-dc13-4a86-9c27-49362ae9fb59)
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/8966dabe-dc13-4a86-9c27-49362ae9fb59" alt="image">
+</div>
+
 **Figure 3. Gain vs frequency in the stable gain range of the amplifier, red line roughly indicates which data points are within each other's uncertainties.**
 
 In the next step, timing of FPGA timer was checked against the readings from an oscilloscope. 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/ec78b0be-9ad5-404a-a0f3-2ec04ae3d99b)
+
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/ec78b0be-9ad5-404a-a0f3-2ec04ae3d99b" alt="image">
+</div>
+
 **Figure 4. Time interval between pulser signals measured by FPGA, vs measured by the oscilloscope. Linear fit is performed using least squares rule.**
 
 Perfect agreement between the two methods of measurement would correspond to a line 1x+0 on the graph, the obtained fit parameters are within their uncertainty from it. This indicates that FPGA measures time between two signals reliably. It was also noticed, that as expected when time separation between two signals was larger than $` 20 \mu s `$, 'Muon Physics’ program was not showing the time between signals but instead, number of instances when the second flash did not occur within the FPGA timing window. 
@@ -120,7 +127,10 @@ Collected muon decays data is cut to account for the stable region: all decay ti
 In this experiment, muons are detected with constant average rate $` \approx 3 s^-1 `$, it can be expected that rate of occurances in a given bin is also constant. Therefore, the number of occurances measured in each bin, is described by Poisson distribution, with average of the distribution taken as the observed number of counts in a gvien bin. This indicates that uncertainty of number of counts in a bin is equal to square root of number of counts in that bin: $` \delta N  = \sqrt{N} `$ [10].
 This description works however only for larger numbers of occurances, therefore in a histogram, neighbouring bins are combined in such a way that each bin contains at least 5 counts. Fitting is then performed. 
 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/0d361020-996a-412c-9a7d-d73dfbe25981)
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/0d361020-996a-412c-9a7d-d73dfbe25981" alt="image">
+</div>
+
 **Figure 5. Histogram of the muon decay data together with fitted function.**
 
 A muon lifetime is obtained as:
@@ -143,34 +153,60 @@ And the Fermi coupling constant (in natural units):
 Which agrees with $` \left(1.1663787\pm0.0000006\right)\ {10}^{-5}{\ GeV}^{-2} `$ Codata recommendation [12]. 
 
 Impact of the number of bins and how low decay times are disregarded (the cut threshold) on the fitted lifetime was investigated. 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/8ad8262f-48a1-4e32-a524-38f63d4f3594)
+
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/8ad8262f-48a1-4e32-a524-38f63d4f3594" alt="image">
+</div>
+
 **Figure 6. Fitted lifetime value relation to how low decay times are disregarded (cut threshold). **
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/11e1da44-a0dd-473f-8c45-db5a9eda2da7)
+
+
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/11e1da44-a0dd-473f-8c45-db5a9eda2da7" alt="image">
+</div>
+
 **Figure 7. Fitted lifetime value relation to the chosen initial number of bins (before combining bins together for at least 5 counts in each).**
 
 Figure 7 reveals a negative correlation between fitted lifetime and how many bins are initially chosen. This lowers confidence in fit result, since the method of rounding up square root of number of data points for choosing number of bins is a rule of thumb. The reason for this correlation is the fact that for bigger numbers of bins, each bin contains less counts, because the constant total number of counts is being distributed into more bins. Since decay times are exponentially distributed, for large decay times there is generally less occurrences. However after combining the bins, each bin for larger decay times has at least 5 counts, therefore choosing bigger number of bins decreases counts in bins at lower decay times, but does not change them at larger decay times, due to the method of combining the bins together. This tends to make the distribution less ‘steep’ which corresponds to lower lifetime values. This can be observed, by comparing fitted functions and histograms for different numbers of bins. 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/80a4a5ae-1f3d-47ac-add6-866c39398155)
+
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/80a4a5ae-1f3d-47ac-add6-866c39398155" alt="image">
+</div>
+
 **Figure 8. Numbers of occurrences in bins together with fitted function, for 25 bins (before combining them).**
 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/1a197122-f4bb-408b-aaa3-6351f1496bef)
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/1a197122-f4bb-408b-aaa3-6351f1496bef" alt="image">
+</div>
+
 **Figure 9. Numbers of occurrences in bins together with fitted function, for 60 bins (before combining them).**
+
 Graphs 8 and 9 show how numbers of occurrences decrease at small decay times when number of bins is chosen as bigger, but they stay almost unchanged for large decay times. This results in the trend of decreasing fitted lifetime for increasing number of bins. 
 
 The same relations of fitted lifetime to number of bins and cut threshold are also investigated for fitting without combining the bins together. 
 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/5831fa95-230e-43a4-bab8-113d903a5642)
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/5831fa95-230e-43a4-bab8-113d903a5642" alt="image">
+</div>
+
 **Figure 10. Fitted lifetime value for unchanged bins relation to how low decay times are disregarded (cut threshold). **
 
 Figures 6 and 10 show similar trend between the fitted lifetime and cut threshold.
 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/cb2eafba-4a71-4a38-a9b7-57bdff736671)
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/cb2eafba-4a71-4a38-a9b7-57bdff736671" alt="image">
+</div>
+
 **Figure 11. Fitted lifetime value for unchanged bins relation to the chosen number of bins.**
 
 Figure 11 reveals, that the negative correlation between lifetime and number of bins disappears when the bins are not changed. 
 
 The goodness of fit is additionally tested by investigating how the reduced $` \chi^2 `$ depends on number of bins for a fit to a histogram with combined bins such that each bin contains at least 5 occurrences.
 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/568a7068-1d3a-4313-8e6b-b5d8e2d11c75)
+<div align="center">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/568a7068-1d3a-4313-8e6b-b5d8e2d11c75" alt="image">
+</div>
+
 **Figure 12. Reduced $` \chi^2 `$ relation to the initial number of bins when combining the bins together such that each bin contains at least 5 occurrences.**
 
 The general trend in the reduced $` \chi^2 `$ is that it is large for small numbers of bins, above 1, and it decreases with growing number of bins, until after about 40 bins, where it oscillates between about 0.4 and 0.95, without any clear positive or negative correlation. 
@@ -196,14 +232,14 @@ The method of using scintillator and PMT as in this experiment, is widely used i
 
 ## References
 [1]	J.M. Cassels, ‘Pion and Muon Decay [and Discussion]’, the Royal Society publishing, Series A, Mathematical and Physical Sciences, p.463, (Aug 1958) \
-[2]	T. P. Gorringe, D. W. Hertzog, ‘Precision Muon Physics’, Progress in Particle and Nuclear Physics, p.4, 2015 
-[3]	D.M. Webber et al, ‘Measurement of the Positive Muon Lifetime and Determination of the Fermi Constant to Parts-per-Million Precision’, Phys. Rev. Lett. Vol 106, p.1, (2011)
-[4]	TeachSpin, INC, ‘Muon Physics’, [online]. [Accessed 8.11.2022]. Available from: https://www.teachspin.com/muon-physics
-[5]	R. A. Reiter et al., ‘Precise Measurement of the Mean Lives of \mu^+ and \mu^- Mesons in Carbon’, Phys. Rev. Lett. Vol. 5, Iss. 1, p. 23, (1960)
-[6]	J. Beringer et al., ‘Review of Particle Physics’ (Particle Data Group), Phys. Rev. D 86, 010001, p. 30, (2012)
-[7]	M. Bahmanabadi, F. Sheidaei, M. Khakian, and J. Samimi, ‘The charge ratio of the atmospheric muons at low energy’. Phys. Rev. D 74, 082006, p. 1, (2006) 
-[8]	R. L. Workman et al. (Particle Data Group), ‘Progress of Theoretical and Experimental Physics’. Vol. 2022, p. 522, 2022
-[9]	Jay D., Roxy P., ‘Statistics: The Exploration and Analysis of Data’. Fourth edition. Duxbury. 2001, p. 65 
-[10]	Hughes, Ifan, and Thomas Hase, ‘Measurements and Theis Uncertainties: A Practical Guide to Modern Error Analysis’. Oxford University Press, Incorporated, 2010, p. 64 and p. 111
-[11]	V. Tischenko et al. (MuLan Collaboration), ‘Detailed report of the MuLan measurement of the positive muon lifetime and determination of the Fermi constant’. Phys. Rev. D 87, 052003, p. 1, (2013)
-[12]	Peter J. Mohr, David B. Newell, and Barry N. Taylor, ‘CODATA recommended values of the fundamental physical constants: 2014’. Rev. Mod. Phys. 88, 035009, p. 41, (2016) 
+[2]	T. P. Gorringe, D. W. Hertzog, ‘Precision Muon Physics’, Progress in Particle and Nuclear Physics, p.4, 2015 \
+[3]	D.M. Webber et al, ‘Measurement of the Positive Muon Lifetime and Determination of the Fermi Constant to Parts-per-Million Precision’, Phys. Rev. Lett. Vol 106, p.1, (2011) \
+[4]	TeachSpin, INC, ‘Muon Physics’, [online]. [Accessed 8.11.2022]. Available from: https://www.teachspin.com/muon-physics \
+[5]	R. A. Reiter et al., ‘Precise Measurement of the Mean Lives of \mu^+ and \mu^- Mesons in Carbon’, Phys. Rev. Lett. Vol. 5, Iss. 1, p. 23, (1960) \
+[6]	J. Beringer et al., ‘Review of Particle Physics’ (Particle Data Group), Phys. Rev. D 86, 010001, p. 30, (2012) \
+[7]	M. Bahmanabadi, F. Sheidaei, M. Khakian, and J. Samimi, ‘The charge ratio of the atmospheric muons at low energy’. Phys. Rev. D 74, 082006, p. 1, (2006) \
+[8]	R. L. Workman et al. (Particle Data Group), ‘Progress of Theoretical and Experimental Physics’. Vol. 2022, p. 522, 2022 \
+[9]	Jay D., Roxy P., ‘Statistics: The Exploration and Analysis of Data’. Fourth edition. Duxbury. 2001, p. 65  \
+[10]	Hughes, Ifan, and Thomas Hase, ‘Measurements and Theis Uncertainties: A Practical Guide to Modern Error Analysis’. Oxford University Press, Incorporated, 2010, p. 64 and p. 111 \
+[11]	V. Tischenko et al. (MuLan Collaboration), ‘Detailed report of the MuLan measurement of the positive muon lifetime and determination of the Fermi constant’. Phys. Rev. D 87, 052003, p. 1, (2013) \
+[12]	Peter J. Mohr, David B. Newell, and Barry N. Taylor, ‘CODATA recommended values of the fundamental physical constants: 2014’. Rev. Mod. Phys. 88, 035009, p. 41, (2016) \
