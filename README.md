@@ -2,6 +2,7 @@
 
 ## Summary
 A single cylindrical scintillator, together with a PMT were used to detect decays of muons produced in atmosphere. Times between muon entering the detector and decaying were plotted as a histogram and an exponential fit was performed to find the muon lifetime. From this, the positive muon lifetime was found to be $` \tau^+ = (2.2 \pm 0.3) \mu s `$. The Fermi coupling constant was obtained as $` \frac{G_F}{(\hbar c)^3} = (1.16 \pm 0.08) 10^{-5}  GeV^{-2} `$. Various properties of fit were investigated, such as its dependance on number of bins chosen for the histogram.
+![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/eaed9178-6f1f-42b0-9bc2-255565825958)
 
 ## Introduction
 
