@@ -118,7 +118,7 @@ In the next step, timing of FPGA timer was checked against the readings from an 
 **Figure 4. Time interval between pulser signals measured by FPGA, vs measured by the oscilloscope. Linear fit is performed using least squares rule.**
 
 Perfect agreement between the two methods of measurement would correspond to a line 1x+0 on the graph, the obtained fit parameters are within their uncertainty from it. This indicates that FPGA measures time between two signals reliably. It was also noticed, that as expected when time separation between two signals was larger than $` 20 \mu s `$, 'Muon Physics’ program was not showing the time between signals but instead, number of instances when the second flash did not occur within the FPGA timing window. 
-The vertical flux through scintillator is estimated as flux [8] times scintillator’s base area, to be $` \approx 3 s^-1 `$. \
+The vertical flux through scintillator is estimated as flux [8] times scintillator’s base area, to be $` \approx 3 s^-1 `$.
 
 
 A total of 4 data collection runs have been performed, with total duration of 68:36:14 (hh:mm:ss). Total number of muon decays recorded was 1970, the average muon flux in all runs was slightly lower than 3, between $` 2.6025 s^-2 `$ and $` 2.9004 s^-1 `$. It is better to underestimate flux, since that way noise is decreased. Data was collected and decay times were plotted as a histogram. 
