@@ -189,7 +189,7 @@ The same relations of fitted lifetime to number of bins and cut threshold are al
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/5831fa95-230e-43a4-bab8-113d903a5642" alt="image">
 </div>
 
-**Figure 10. Fitted lifetime value for unchanged bins relation to how low decay times are disregarded (cut threshold). **
+**Figure 10. Fitted lifetime value for unchanged bins relation to how low decay times are disregarded (cut threshold).**
 
 Figures 6 and 10 show similar trend between the fitted lifetime and cut threshold.
 
