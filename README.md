@@ -99,7 +99,7 @@ Gain of the two-stage amplifier is plotted against the signal frequency. Gain is
 
 **Figure 2. Gain of the two-stage amplifier used in TeachSpin apparatus vs frequency of the sine wave voltage input from the function generator.**
 
-On Figure 2, it can be seen that gain depends significantly on the frequency, however there is a region in which gain appears to be stable. Based on those measurements, the stable gain frequency range was estimated to be from $` (20.92 \pm 0.01)kHz to (396.3 \pm 0.1)kHz `$. Limits of the range of decay times with stable range are taken as the inverses of the frequency limits. This gives a range of decay times that can be measured reliebly as: $` (2.52 \pm 0.01) \mu s - (47.80 \pm 0.02) \mu s `$. The upper limit is however larger than the maximum decay time allowed by the FPGA, therefore the final range in which we can measure decay times reliably is taken as: 
+On Figure 2, it can be seen that gain depends significantly on the frequency, however there is a region in which gain appears to be stable. Based on those measurements, the stable gain frequency range was estimated to be from $` (20.92 \pm 0.01)kHz `$ to $` (396.3 \pm 0.1)kHz `$. Limits of the range of decay times with stable range are taken as the inverses of the frequency limits. This gives a range of decay times that can be measured reliebly as: $` (2.52 \pm 0.01) \mu s - (47.80 \pm 0.02) \mu s `$. The upper limit is however larger than the maximum decay time allowed by the FPGA, therefore the final range in which we can measure decay times reliably is taken as: 
 ```math
 (2.52 \pm 0.01) \mu s - 20 \mu s
 ```
