@@ -54,7 +54,36 @@ In the second step of calibration of the instruments, it is verified experimenta
 
 After the calibration, muon decays can be detected. Muon flux through the scintillator is estimated, and the discriminator threshold is set to such value to achieve muon rate slightly lower than the estimation. The collected decay times are then plotted as a histogram and analyzed.  
 Muon decays follow exponential distribution, therefore a fit function to the histogram is chosen as:
+```math
+f(t) = A exp(- \frac{1}{\tau} t) + B
+```
+Where: A is a fit constant without a physical meaning, B is a fit constant corresponding to noise, $` \tau `$ is muon lifetime.
+A fit to the histogram is performed according to the least squares rule, using curve_fit in Python. Thus, muon lifetime \tau is obtained as one of the fit parameters. 
+This fitted muon lifetime observed in the experiment, has contribution from both negative and positive muons:
+```math
+\frac{1}{\tau_{obs}} = \frac{N^+ \frac{1}{\tau^+} + N^- \frac{1}{\tau^-}}{N^+ + N^-}
+```
+Where: $`\tau_{obs}`$ - fitted muon lifetime, $`\tau^+`$ and $` \tau^- `$ - positive and negative muon lifetimes respectively, $`N^+ `$ and $` N^- `$ - numbers of positive and negative muons detected respectively. 
 
+Using ratio of positive to negative muon fluxes $` R(\frac{\mu^+}{\mu^-}) = \frac{N^+}{N^-} `$, positive muon lifetime can be obtained as:
+```math
+\tau^+ = \frac{R \tau_{obs} \tau^-}{\tau^- + R \tau^- - \tau_{obs}}
+```
+Negative muon lifetime $` \tau^- `$ is taken as negative muon lifetime on carbon, since scintillator used in this experiment is carbon based. 
+It is: $` \tau^- = (2.043 \pm 0.003) \mu s $` [5]
+The ratio of fluxes R, needs to be taken for a given muon momentum. The relativistic energy - momentum relation is:
+```math
+E^2 = p^2 c^2 + m_0^2 c^4
+```
+Where: E is the energy of a particle, p is its momentum and m_0 - its mass, c is the speed of light in vacuum. In natural units:
+```math
+p = \sqrt{E^2 - m_0^2}
+```
+Where for muons: $`m_0 = (105.6583715 \pm 0.0000035) MeV `$ [6].
+Muons which decay in scintillator used in this experiment, have an estimated energy of about 160 MeV. Therefore, their momentum is estimated as $` p \approx 120 MeV. 
+For this momentum, the ratio is taken as: $` R = 1.21 \pm 0.01 `$ [7].
+
+## Results and Analysis
 
 ## References
 [1]	J.M. Cassels, ‘Pion and Muon Decay [and Discussion]’, the Royal Society publishing, Series A, Mathematical and Physical Sciences, p.463, (Aug 1958) \
