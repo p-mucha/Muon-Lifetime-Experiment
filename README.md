@@ -235,11 +235,11 @@ The method of using scintillator and PMT as in this experiment, is widely used i
 [2]	T. P. Gorringe, D. W. Hertzog, ‘Precision Muon Physics’, Progress in Particle and Nuclear Physics, p.4, 2015 \
 [3]	D.M. Webber et al, ‘Measurement of the Positive Muon Lifetime and Determination of the Fermi Constant to Parts-per-Million Precision’, Phys. Rev. Lett. Vol 106, p.1, (2011) \
 [4]	TeachSpin, INC, ‘Muon Physics’, [online]. [Accessed 8.11.2022]. Available from: https://www.teachspin.com/muon-physics \
-[5]	R. A. Reiter et al., ‘Precise Measurement of the Mean Lives of \mu^+ and \mu^- Mesons in Carbon’, Phys. Rev. Lett. Vol. 5, Iss. 1, p. 23, (1960) \
+[5]	R. A. Reiter et al., ‘Precise Measurement of the Mean Lives of $` \mu^+ `$ and $` \mu^- `$ Mesons in Carbon’, Phys. Rev. Lett. Vol. 5, Iss. 1, p. 23, (1960) \
 [6]	J. Beringer et al., ‘Review of Particle Physics’ (Particle Data Group), Phys. Rev. D 86, 010001, p. 30, (2012) \
 [7]	M. Bahmanabadi, F. Sheidaei, M. Khakian, and J. Samimi, ‘The charge ratio of the atmospheric muons at low energy’. Phys. Rev. D 74, 082006, p. 1, (2006) \
 [8]	R. L. Workman et al. (Particle Data Group), ‘Progress of Theoretical and Experimental Physics’. Vol. 2022, p. 522, 2022 \
 [9]	Jay D., Roxy P., ‘Statistics: The Exploration and Analysis of Data’. Fourth edition. Duxbury. 2001, p. 65  \
 [10]	Hughes, Ifan, and Thomas Hase, ‘Measurements and Theis Uncertainties: A Practical Guide to Modern Error Analysis’. Oxford University Press, Incorporated, 2010, p. 64 and p. 111 \
 [11]	V. Tischenko et al. (MuLan Collaboration), ‘Detailed report of the MuLan measurement of the positive muon lifetime and determination of the Fermi constant’. Phys. Rev. D 87, 052003, p. 1, (2013) \
-[12]	Peter J. Mohr, David B. Newell, and Barry N. Taylor, ‘CODATA recommended values of the fundamental physical constants: 2014’. Rev. Mod. Phys. 88, 035009, p. 41, (2016) \
+[12]	Peter J. Mohr, David B. Newell, and Barry N. Taylor, ‘CODATA recommended values of the fundamental physical constants: 2014’. Rev. Mod. Phys. 88, 035009, p. 41, (2016) 
