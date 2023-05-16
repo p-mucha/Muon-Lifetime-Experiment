@@ -158,7 +158,7 @@ Impact of the number of bins and how low decay times are disregarded (the cut th
   <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/8ad8262f-48a1-4e32-a524-38f63d4f3594" alt="image">
 </div>
 
-**Figure 6. Fitted lifetime value relation to how low decay times are disregarded (cut threshold). **
+**Figure 6. Fitted lifetime value relation to how low decay times are disregarded (cut threshold).**
 
 
 <div align="center">
