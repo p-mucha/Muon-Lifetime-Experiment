@@ -254,7 +254,6 @@ The precision of this experiment could be further improved by collecting more mu
 In this experiment, decay times of muons produced in atmosphere were observed. This means that there is a contribution from both positive and negative muons. This introduces additional uncertainty. Alternatively different source could be used for the production of only one type of muons. 
 The method of using scintillator and PMT as in this experiment, is widely used in particle physics research.
 
-![image](https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/21cb2e89-99d3-4b3d-90b2-b5443922f81f)
 
 
 
