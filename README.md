@@ -167,7 +167,7 @@ Which agrees with $` \left(1.1663787\pm0.0000006\right)\ {10}^{-5}{\ GeV}^{-2} `
 Impact of the number of bins and how low decay times are disregarded (the cut threshold) on the fitted lifetime was investigated. 
 
 <div align="center">
-  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/8ad8262f-48a1-4e32-a524-38f63d4f3594" alt="image">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/df50ffd1-2efa-4286-ac4f-67e827ae6cfa" alt="image">
 </div>
 
 <p align="center">
@@ -176,12 +176,13 @@ Impact of the number of bins and how low decay times are disregarded (the cut th
 
 
 <div align="center">
-  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/11e1da44-a0dd-473f-8c45-db5a9eda2da7" alt="image">
+  <img src="https://github.com/p-mucha/Muon-Lifetime-Experiment/assets/126366877/7c74a357-1f7e-434d-b923-3b89bb87e72b" alt="image">
 </div>
 
 <p align="center">
   <b>Figure 7. Fitted lifetime value relation to the chosen initial number of bins (before combining bins together for at least 5 counts in each).</b>
 </p>
+
 
 Figure 7 reveals a negative correlation between fitted lifetime and how many bins are initially chosen. This lowers confidence in fit result, since the method of rounding up square root of number of data points for choosing number of bins is a rule of thumb. The reason for this correlation is the fact that for bigger numbers of bins, each bin contains less counts, because the constant total number of counts is being distributed into more bins. Since decay times are exponentially distributed, for large decay times there is generally less occurrences. However after combining the bins, each bin for larger decay times has at least 5 counts, therefore choosing bigger number of bins decreases counts in bins at lower decay times, but does not change them at larger decay times, due to the method of combining the bins together. This tends to make the distribution less ‘steep’ which corresponds to lower lifetime values. This can be observed, by comparing fitted functions and histograms for different numbers of bins. 
 
